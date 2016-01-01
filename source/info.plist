@@ -30,6 +30,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>6DC226B1-F3E8-4B86-A95A-3DAB00CC78D7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E4BA8749-CA23-46CE-869A-CEFC8320BF82</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>72BEA7C5-CF4F-4FDD-BD50-AE8AF221E993</key>
 		<array>
 			<dict>
@@ -93,31 +104,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>'''
-QRCode v1.2
-
-Github: https://github.com/hilen/Alfred.QRCode
-Author: Hilen
-'''
-python ./qr_code.py "{query}"</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>24BC098C-FDEB-4620-B336-50A8C6A944FE</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -137,6 +123,31 @@ python ./qr_code.py "{query}"</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>5B62777C-3A5C-4C54-9A04-B18D74466990</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>'''
+QRCode v1.2
+
+Github: https://github.com/hilen/Alfred.QRCode
+Author: Hilen
+'''
+python ./qr_code.py "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>24BC098C-FDEB-4620-B336-50A8C6A944FE</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -217,6 +228,44 @@ eval $cmd
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>python ./qr_code_preview.py "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E4BA8749-CA23-46CE-869A-CEFC8320BF82</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>qqr</string>
+				<key>text</key>
+				<string>quick-loop</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>6DC226B1-F3E8-4B86-A95A-3DAB00CC78D7</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Install Python library:
@@ -250,10 +299,20 @@ Usage:
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
+		<key>6DC226B1-F3E8-4B86-A95A-3DAB00CC78D7</key>
+		<dict>
+			<key>ypos</key>
+			<real>400</real>
+		</dict>
 		<key>72BEA7C5-CF4F-4FDD-BD50-AE8AF221E993</key>
 		<dict>
 			<key>ypos</key>
 			<real>280</real>
+		</dict>
+		<key>E4BA8749-CA23-46CE-869A-CEFC8320BF82</key>
+		<dict>
+			<key>ypos</key>
+			<real>370</real>
 		</dict>
 		<key>FDAFAA84-04B8-4509-B8F2-A532439C08C2</key>
 		<dict>

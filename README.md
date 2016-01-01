@@ -10,7 +10,7 @@ A QRcode generator based on [python-qrcode](https://github.com/lincolnloop/pytho
 2. Install [python-qrcode](https://github.com/lincolnloop/python-qrcode) by : `sudo easy_install qrcode`
 
 ##Usage:
-1. Type `qr text`;
+1. Type `qr text` or `qqr text`;
 2. Define a hotkey, select some text, press the hotkey;
 3. Type `qrfolder` to open the QR code image folder. The image's name is created by your time and content's md5 value.
 
